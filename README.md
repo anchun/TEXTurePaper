@@ -46,13 +46,16 @@ Official Implementation for "TEXTure: Semantic Texture Transfer using Text Token
 Install the common dependencies from the `requirements.txt` file
 
 ```bash
+conda create -n texture python==3.8.19
+conda activate texture
+conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 pytorch-cuda=11.7 -c pytorch -c nvidia
 pip install -r requirements.txt
 ```
 
 and Kaolin
 
 ```bash
-pip install kaolin==0.11.0 -f https://nvidia-kaolin.s3.us-east-2.amazonaws.com/{TORCH_VER}_{CUDA_VER}.html
+pip install kaolin==0.15.0 -f https://nvidia-kaolin.s3.us-east-2.amazonaws.com/torch-1.13.1_cu117.html
 ```
 
 Note that you also need a :hugs: token for StableDiffusion.

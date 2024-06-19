@@ -1,5 +1,5 @@
-torch==1.12.1
-torchvision==0.13.1
+#torch==1.13.1
+#torchvision==0.14.1
 transformers
 diffusers
 accelerate
@@ -13,3 +13,6 @@ loguru
 tqdm
 einops
 opencv-python
+numpy==1.23.0
+charset-normalizer==3.1.0
+imageio-ffmpeg==0.5.1
